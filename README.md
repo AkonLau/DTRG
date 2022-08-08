@@ -66,19 +66,19 @@ You can also change the data root in the `./datasets/xxx.py` for each dataset.
 
 ## Training & Evaluation
 
-To train a model on CUB dataset using the Resnet50 backbone 
+To train a model on the CUB dataset using the Resnet50 backbone 
 
 ``` python main.py --dataset cub --netname resnet50 --seed 1 ```
 
 ``` python main.py --dataset cub --netname resnet50 --ocl --graph --seed 1 ```
 
-To train a model on CUB dataset using the Resnet50+mid backbone 
+To train a model on the CUB dataset using the Resnet50+mid backbone 
 
 ``` python main.py --dataset cub --netname resnet50 --midlevel --seed 1 ```
 
 ``` python main.py --dataset cub --netname resnet50 --midlevel --ocl --graph --tau 2 --seed 1 ```
 
-To train a model with inter-class relation augmentation on CUB dataset using the Resnet50+mid backbone 
+To train a model with inter-class relation augmentation on the CUB dataset using the Resnet50+mid backbone 
 
 ``` python main.py --dataset cub --netname resnet50 --midlevel --mixmethod mixup --epochs 200 --ocl --graph --tau 2 --seed 1 ```
 
@@ -86,7 +86,7 @@ To train a model with inter-class relation augmentation on CUB dataset using the
 
 ``` python main.py --dataset cub --netname resnet50 --midlevel --mixmethod snapmix --epochs 200 --ocl --graph --tau 2 --seed 1 ```
 
-Compare with the Label Smooth, the OLS and the Center Loss methods on CUB dataset using the ResNet50 backbone.
+To compare with the Label Smooth, the OLS and the Center Loss methods on the CUB dataset using the ResNet50 backbone.
 
 ``` python main.py --dataset cub --netname resnet50 --seed 1 --ls ```
 
@@ -101,7 +101,7 @@ To train model on other datasets using other network backbones, you can specify 
 ``` --dataset: name of dataset  (for example: cub, car, aircrft, ...)```
 
 ## Performance
-Ablation studies on CUB,  CAR and AIR datasets with ResNet50,  ResNet101, DenseNet161,ResNet50+mid, ResNet101+mid and DenseNet161+mid backbones, respectively.
+Ablation studies on the CUB,  the CAR and the AIR datasets with the ResNet50, the ResNet101, the DenseNet161, the ResNet50+mid, the ResNet101+mid and the DenseNet161+mid backbones, respectively.
 
 ![results1](asserts/results1.png)
 
