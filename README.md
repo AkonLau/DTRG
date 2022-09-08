@@ -11,7 +11,7 @@ achieving the state-of-the-art accuracy on fine-grained object benchmarks and su
 For more details, please refer to our [paper](https://arxiv.org/abs/2208.01997).
 ## Method Overview
 
-![framework](asserts/framework.jpg)
+![framework](assets/framework.jpg)
 
 ## Setup
 ### Install Package Dependencies
@@ -103,23 +103,29 @@ To train model on other datasets using other network backbones, you can specify 
 ## Performance
 Ablation studies on the CUB,  the CAR and the AIR datasets with the ResNet50, the ResNet101, the DenseNet161, the ResNet50+mid, the ResNet101+mid and the DenseNet161+mid backbones, respectively.
 
-![results1](asserts/results1.png)
+![results1](assets/results1.png)
 
 Evaluation of the inter-class relation augmentation on the CUB, the CAR and the AIR datasets. Experiments are implemented with ResNet50+mid, the ResNet101+mid and DenseNet161+mid backbones, respectively.
 
-![results2](asserts/results2.png)
+![results2](assets/results2.png)
 
 ## Citation
 
 If you find our paper and repo useful, please cite our paper.
 ```commandline
-@inproceedings{Liu2022ConvolutionalFC,
-  title={Convolutional Fine-Grained Classification with Self-Supervised Target Relation Regularization},
-  author={Kang-Jun Liu and Ke Chen and Kui Jia},
-  journal={arXiv:2208.01997},
-  year={2022}
+@article{liu2022convolutional,
+  title={Convolutional Fine-Grained Classification With Self-Supervised Target Relation Regularization},
+  author={Liu, Kangjun and Chen, Ke and Jia, Kui},
+  journal={IEEE Transactions on Image Processing},
+  volume={31},
+  pages={5570--5584},
+  year={2022},
+  publisher={IEEE}
 }
 ```
+
+## Contact
+If you have any questions about our work, feel free to contact us through email (wikangj.liu@mail.scut.edu.cn) or Github issues.
 
 ## Acknowledgement
 The structure of this codebase is borrowed from this pytorch implementataion of [SnapMix]( https://github.com/Shaoli-Huang/SnapMix).
